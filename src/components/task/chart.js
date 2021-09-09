@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardWrapper } from '../common/card';
+import { CardWrapper } from '../common/styled-components';
 import { PieChart } from 'react-minimal-pie-chart';
 
 const TasksChart = ({

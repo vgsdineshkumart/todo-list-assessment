@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { CardWrapper } from '../common/card';
-import Label from '../common/label';
+import { CardWrapper, Label } from '../common/styled-components';
 
 const LatestTasks = ({
   tasks = []

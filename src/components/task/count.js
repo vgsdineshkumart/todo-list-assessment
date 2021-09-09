@@ -1,6 +1,5 @@
 import React from 'react';
-import { CardWrapper } from '../common/card';
-import Label from '../common/label';
+import { CardWrapper, Label } from '../common/styled-components';
 import styled from 'styled-components';
 
 const TasksCount = ({ completed, total }) => {

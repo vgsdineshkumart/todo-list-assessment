@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Input from '../../common/input';
-import Button from '../../common/button';
-import Error from '../../common/error';
+import { Button, Error, Input } from '../../common/styled-components';
 
 const Pure = ({
   showDetailsModal,

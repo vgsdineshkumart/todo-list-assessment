@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import EditIconSrc from '../../assets/imgs/pen-solid.svg'
 import DeleteIconSrc from '../../assets/imgs/trash-solid.svg'
+import Checkbox from '../common/checkbox'
 
 const TasksList = ({
   tasks,
@@ -29,7 +30,7 @@ const TasksList = ({
           return (
             <TaskInfo key={task._id}>
               <InnerWrapper>
-                <Checkbox type='checkbox' checked={task.completed} onChange={($event) => updateTaskStatus($event, task)} />
+                <Checkbox checked={task.completed} onChange={($event) => updateTaskStatus($event, task)} />
                 <TaskName completed={task.completed}>{task.name}</TaskName>
                 <EditIcon onClick={() => showTaskDetailsModal(task)} />
                 <DeleteIcon onClick={() => deleteTaskDetails(task)} />
@@ -66,7 +67,7 @@ const InnerWrapper = styled.div`
   padding-bottom: 24px;
 `
 
-const Checkbox = styled.input``
+// const Checkbox = styled.input``
 
 const TaskName = styled.div`
   text-align: left;

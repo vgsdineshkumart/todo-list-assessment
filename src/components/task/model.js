@@ -13,7 +13,7 @@ export const clearTaskDetailsAction = createAction('Clearing task details')
 export const deleteTaskDetailsAction = createAction('Deleting task details')
 export const updateTaskDetailsAction = createAction('Updating task details')
 
-const defaultState = {
+export const defaultState = {
     showDetailsModal: false,
     taskDetails: {},
     tasksList: []

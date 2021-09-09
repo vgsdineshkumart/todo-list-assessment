@@ -11,7 +11,7 @@ import TaskDetails from '../task/details';
 const Pure = ({
   dashboardData,
   fetchDashboardData,
-  showTaskDetails = true,
+  showTaskDetails,
   showDetailsModal
 }) => {
 

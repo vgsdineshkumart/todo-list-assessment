@@ -11,7 +11,7 @@ export const logoutAction = createAction('Logout user')
 
 const USER_DATA = JSON.parse(sessionStorage.getItem('USER_DATA') || '{}')
 
-const defaultState = {
+export const defaultState = {
   loggedIn: false,
   loggedInUserToken: '',
   loginError: '',

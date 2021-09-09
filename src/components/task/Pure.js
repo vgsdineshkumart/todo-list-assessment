@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import Input from '../common/input';
-import Button from '../common/button';
 import TasksList from './list';
 import SearchIconSrc from '../../assets/imgs/search-solid.svg'
+import { Button, Input } from '../common/styled-components';
 
 const Pure = ({
   tasks = [],

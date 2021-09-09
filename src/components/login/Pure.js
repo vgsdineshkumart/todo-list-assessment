@@ -1,8 +1,6 @@
 import React from 'react'
-import Input from '../common/input';
-import Button from '../common/button';
 import styled from 'styled-components';
-import Error from '../common/error';
+import { Button, Error, Input } from '../common/styled-components';
 
 const Pure = props => {
   const [id, setId] = React.useState('')

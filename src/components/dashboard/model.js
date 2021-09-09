@@ -4,11 +4,15 @@ import httpClient from '../../core/httpClient';
 import { API_ENDPOINT } from '../../App';
 
 export const fetchDashboardDataAction = createAction('Fetch dashboard data')
-const fetchDashboardDataSuccessAction = createAction('Fetch dashboard data success')
-const fetchDashboardDataFailureAction = createAction('Fetch dashboard data failed')
+export const fetchDashboardDataSuccessAction = createAction('Fetch dashboard data success')
+export const fetchDashboardDataFailureAction = createAction('Fetch dashboard data failed')
 
-const defaultState = {
-  dashboardData: {}
+export const defaultState = {
+  dashboardData: {
+    totalTasks: 0,
+    tasksCompleted: 0,
+    latestTasks: []
+  }
 }
 
 const fetchDashboardData = () => {
@@ -37,6 +41,6 @@ export const dashboardReducer = createReducer({
   }),
   [fetchDashboardDataFailureAction]: (state) => ({
     ...state,
-    dashboardData: {}
+    dashboardData: defaultState.dashboardData
   })
 }, defaultState)
